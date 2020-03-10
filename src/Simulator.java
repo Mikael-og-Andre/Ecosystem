@@ -170,4 +170,13 @@ public class Simulator
             // wake up
         }
     }
+
+    public int getCount(Class animalClass){
+        FieldStats stats = view.getStats();
+        return stats.getCount(animalClass);
+    }
+
+    public int getStep() {
+        return step;
+    }
 }

@@ -125,4 +125,12 @@ public class FieldStats
         }
         countsValid = true;
     }
+
+    public int getCount(Class animalClass){
+        Counter counter = counters.get(animalClass);
+        int count = counter.getCount();
+
+        return count;
+
+    }
 }

@@ -117,6 +117,10 @@ public class SimulatorView extends JFrame
         fieldView.repaint();
     }
 
+    public FieldStats getStats(){
+        return stats;
+    }
+
     /**
      * Determine whether the simulation should continue to run.
      * @return true If there is more than one species alive.
